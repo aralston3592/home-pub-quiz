@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&&family=Anton&display=swap');
 
 body {
     text-align: center;
-    font-family: "Roboto", sans-serif;
-    background-color: #62acd0;
-    color: #f9ee6c;
+    font-family: "Anton", sans-serif;
+    background-color: #244656;
+    color: #fff;
 }
 
 .header {
     font-family: "Monoton", sans-serif;
     font-size: 50px;
     letter-spacing: 15px;
-    padding-bottom: 20px;
 }
+
 
 /*--------------------------------------------------------------Landing Page---*/
 
-.landing-page-content {
-    padding-top: 20vh;
-}
+
 
 /*--------------------------------------------------------------Buttons---*/
 
@@ -38,9 +36,13 @@ body {
 /*------------------------------------------------------QUIZ ROUNDS--------*/
 
 .quiz-round {
-    padding-bottom: 10%;
+    padding-bottom: 30px;
 }
 
-.answer {
-    color: #f9ee6c
+.btn-answer {
+    background-color: #f9ee6c;
+    color: #244656;
+    border-radius: 1.2rem;
+    margin-bottom: 10px;
+    min-width: 100px;
 }

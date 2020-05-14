@@ -17,15 +17,22 @@
     
     <!-------------------------------------LANDING PAGE-------->
 
-    <div class="container landing-page-content">
-        <div class="s12">
+    <div class="container row landing-page-content">
+        <div class="col s12">
             <h1 class="header">HOME PUB QUIZ</h1>
+            <div class="divider"></div>
         </div>
-        <div>
-            <button type="button" class="btn btn-quiz pulse" href="quiz.html">START QUIZ</button>
+        <div class="col s12">
+            <h4 class="hide-on-small-only">Hit the start button and see if you can earn yourself a pint by acing our home pub quiz!</h4>
+            <div class="hide-on-small-only divider"></div>
+            <h5 class="header">RULES</h5>
+            <div class="row">
+                <h6>5 rounds of 5 questions<br>Choose 1 of a possible 3 answers for each question</h6>
+                <h5>What are you waiting for?</h5>
+            </div>
         </div>
-        <div>
-            <h1 class="header">HOME PUB QUIZ</h1>
+        <div class="col s12">
+            <button type="button" class="btn btn-quiz pulse">START QUIZ</button>
         </div>
     </div>
    
@@ -38,42 +45,84 @@
         <h1 class="header">HOME PUB QUIZ</h1>
         <h3>ROUND 1 - FOOD & DRINK</h3>
         <form>
-            <h5 class="quiz-question">1. Which pastry are profiteroles made from?</h5>
-            <ul id="optionsone-1">
-                <li><input type="radio" name="question1" value="a" id="round-one-1a" class="answer">Puff</li>
-                <li><input type="radio" name="question1" value="b" id="round-one-1b" class="answer">Filo</li>
-                <li><input type="radio" name="question1" value="c" id="round-one-1c" class="answer">Choux*</li>
+            <h5>1. Which pastry are profiteroles made from?</h5>
+            <ul id="answers-one-one">
+                <li class="pagination">
+                    <input type="radio" name="round-one-question-one" value="a" id="round-one-1a" class="form-check-input">
+                    <button class="btn btn-answer incorrect">Puff Pastry</button>
+                </li>
+                <li class="pagination">
+                    <input type="radio" name="round-one-question-one" value="b" id="round-one-1b" class="form-check-input">
+                    <button class="btn btn-answer incorrect">Filo Pastry</button>
+                </li>
+                <li class="pagination">
+                    <input type="radio" name="round-one-question-one" value="c" id="round-one-1c" class="form-check-input">
+                    <button class="btn btn-answer correct">Choux Pastry*</button>
+                </li>
             </ul>
             
-            <h5 class="quiz-question">2. What is the most expensive spice in the world by weight?</h5>
-            <ul id="optionsone-2">
-                <li><input type="radio" name="question1" value="a" id="round-one-2a" class="answer"><label for="round-one-2a" class="answer">Saffron*</label></li>
-                <li><input type="radio" name="question1" value="b" id="round-one-2b" class="answer"><label for="round-one-2b" class="answer">Ginger</label></li>
-                <li><input type="radio" name="question1" value="c" id="round-one-2c" class="answer"><label for="round-one-2c" class="answer">Vanilla</label></li>
+            <h5>2. What is the most expensive spice in the world by weight?</h5>
+            <ul id="answers-one-two">
+                <li>
+                    <input type="radio" name="round-one-question-two" value="a" id="round-one-2a" class="form-check-input"><button class="btn btn-answer correct">Saffron*</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-one-question-two" value="b" id="round-one-2b" class="form-check-input"><button class="btn btn-answer incorrect">Ginger</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-one-question-two" value="c" id="round-one-2c" class="form-check-input"><button class="btn btn-answer incorrect">Vanilla</button>
+                </li>
             </ul>
                         
-            <h5 class="quiz-question">3. Which fast-food franchise has the largest number of restaurants in the world?</h5>
-            <ul id="optionsone-3">
-                <li><input type="radio" name="question1" value="a" id="round-one-3a" class="answer"><label for="round-one-3a" class="answer">McDonald's</label></li>
-                <li><input type="radio" name="question1" value="b" id="round-one-3b" class="answer"><label for="round-one-3b" class="answer">Subway*</label></li>
-                <li><input type="radio" name="question1" value="c" id="round-one-3c" class="answer"><label for="round-one-3c" class="answer">KFC</label></li>
+            <h5>3. Which fast-food franchise has the largest number of restaurants in the world?</h5>
+            <ul id="answers-one-three">
+                <li>
+                    <input type="radio" name="round-one-question-three" value="a" id="round-one-3a" class="form-check-input">
+                    <button class="btn btn-answer incorrect">McDonald's</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-one-question-three" value="b" id="round-one-3b" class="form-check-input">
+                    <button class="btn btn-answer correct">Subway*</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-one-question-three" value="c" id="round-one-3c" class="form-check-input">
+                    <button class="btn btn-answer incorrect">KFC</button>
+                </li>
             </ul>
             
-            <h5 class="quiz-question">4. A scandinavian meal served buffet style with multiple hot and cold dishes is known as a what?</h5>
-            <ul id="optionsone-4">
-                <li><input type="radio" name="question1" value="a" id="round-one-4a" class="answer"><label for="round-one-4a" class="answer">Smorgasbord*</label></li>
-                <li><input type="radio" name="question1" value="b" id="round-one-4b" class="answer"><label for="round-one-4b" class="answer">Tapas</label></li>
-                <li><input type="radio" name="question1" value="c" id="round-one-4c" class="answer"><label for="round-one-4c" class="answer">Rodizio</label></li>
+            <h5>4. A scandinavian meal served buffet style with multiple hot and cold dishes is known as a what?</h5>
+            <ul id="answers-one-four">
+                <li>
+                    <input type="radio" name="round-one-question-four" value="a" id="round-one-4a" class="form-check-input">
+                    <button class="btn btn-answer correct">Smorgasbord*</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-one-question-four" value="b" id="round-one-4b" class="form-check-input">
+                    <button class="btn btn-answer incorrect">Tapas</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-one-question-four" value="c" id="round-one-4c" class="form-check-input">
+                    <button class="btn btn-answer incorrect">Rodizio</button>
+                </li>
             </ul>
             
-            <h5 class="quiz-question">5. Which animal provides the milk for mozzarella cheese?</h5>
-            <ul id="options-one5">
-                <li><input type="radio" name="question1" value="a" id="round-one-5a" class="answer"><label for="round-one-5a" class="answer">Caribou</label></li>
-                <li><input type="radio" name="question1" value="b" id="round-one-5b" class="answer"><label for="round-one-5b" class="answer">Buffalo*</label></li>
-                <li><input type="radio" name="question1" value="c" id="round-one-5c" class="answer"><label for="round-one-5c" class="answer">Yak</label></li>
+            <h5>5. Which animal provides the milk for mozzarella cheese?</h5>
+            <ul id="answers-one-five">
+                <li>
+                    <input type="radio" name="round-one-question-five" value="a" id="round-one-5a" class="form-check-input"><button class="btn btn-answer incorrect">Caribou</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-one-question-five" value="b" id="round-one-5b" class="form-check-input"><button class="btn btn-answer correct">Buffalo*</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-one-question-five" value="c" id="round-one-5c" class="form-check-input"><button class="btn btn-answer incorrect">Yak</button>
+                </li>
             </ul>
             
-            <button type="button" class="btn next-one submit">Next</button>
+            <button type="button" class="btn-floating btn-large waves-effect waves-light btn">
+                <a href="index.html"><i class="material-icons">home</i></a>
+            </button>
+            <button type="button" class="btn-floating btn-large waves-effect waves-light btn submit next-one"><i class="material-icons">fast_forward</i></button>
         </form>
     </div>
     <!-------------------------------------/ROUND ONE----------->
@@ -83,42 +132,84 @@
         <h1 class="header">HOME PUB QUIZ</h1>
         <h3>ROUND 2 - SCIENCE & NATURE</h3>
         <form>
-            <h5 class="quiz-question">1. What is the collective name for a group of crows?</h5>
-            <ul id="optionstwo-1">
-                <li><input type="radio" name="question1" value="a" id="round-two-1a" class="answer"><label for="round-two-1a" class="answer">Murder*</label></li>
-                <li><input type="radio" name="question1" value="b" id="round-two-1b" class="answer"><label for="round-two-1b" class="answer">Mob</label></li>
-                <li><input type="radio" name="question1" value="c" id="round-two-1c" class="answer"><label for="round-two-1c" class="answer">Mural</label></li>
+            <h5>What is the collective name for a group of crows?</h5>
+            <ul id="answers-two-one">
+                <li>
+                    <input type="radio" name="round-two-question-one" value="a" id="round-two-1a" class="form-check-input">
+                    <button class="btn btn-answer correct">Murder*</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-two-question-one" value="b" id="round-two-1b" class="form-check-input">
+                    <button class="btn btn-answer incorrect">Parliament</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-two-question-one" value="c" id="round-two-1c" class="form-check-input">
+                    <button class="btn btn-answer incorrect">Mallard</button>
+                </li>
             </ul>
             
-            <h5 class="quiz-question">2. How many hearts does an octopuss have?</h5>
-            <ul id="optionstwo-2">
-                <li><input type="radio" name="question1" value="a" id="round-two-2a" class="answer"><label for="round-two-2a" class="answer">6</label></li>
-                <li><input type="radio" name="question1" value="b" id="round-two-2b" class="answer"><label for="round-two-2b" class="answer">2</label></li>
-                <li><input type="radio" name="question1" value="c" id="round-two-2c" class="answer"><label for="round-two-2c" class="answer">3*</label></li>
+            <h5>2. How many hearts does an octopuss have?</h5>
+            <ul id="answers-two-two">
+                <li>
+                    <input type="radio" name="round-two-question-two" value="a" id="round-two-2a" class="form-check-input"><button class="btn btn-answer incorrect">Two</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-two-question-two" value="b" id="round-two-2b" class="form-check-input"><button class="btn btn-answer incorrect">Four</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-two-question-two" value="c" id="round-two-2c" class="form-check-input"><button class="btn btn-answer correct">Three*</button>
+                </li>
             </ul>
                         
-            <h5 class="quiz-question">3. What is the largest moon of Saturn called?</h5>
-            <ul id="optionstwo-3">
-                <li><input type="radio" name="question1" value="a" id="round-two-3a" class="answer"><label for="round-two-3a" class="answer">Mimas</label></li>
-                <li><input type="radio" name="question1" value="b" id="round-two-3b" class="answer"><label for="round-two-3b" class="answer">Rhea</label></li>
-                <li><input type="radio" name="question1" value="c" id="round-two-3c" class="answer"><label for="round-two-3c" class="answer">Titan*</label></li>
+            <h5>3. What is the largest moon of Saturn called?</h5>
+            <ul id="answers-two-three">
+                <li>
+                    <input type="radio" name="round-two-question-three" value="a" id="round-two-3a" class="form-check-input">
+                    <button class="btn btn-answer correct">Titan*</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-two-question-three" value="b" id="round-two-3b" class="form-check-input">
+                    <button class="btn btn-answer incorrect">Mimas</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-two-question-three" value="c" id="round-two-3c" class="form-check-input">
+                    <button class="btn btn-answer incorrect">Neptune</button>
+                </li>
             </ul>
             
-            <h5 class="quiz-question">4. On the periodic table of elemnets, what is the chemical symbol for Mercury</h5>
-            <ul id="optionstwo-4">
-                <li><input type="radio" name="question1" value="a" id="round-two-4a" class="answer"><label for="round-two-4a" class="answer">Hg*</label></li>
-                <li><input type="radio" name="question1" value="b" id="round-two-4b" class="answer"><label for="round-two-4b" class="answer">Ag</label></li>
-                <li><input type="radio" name="question1" value="c" id="round-two-4c" class="answer"><label for="round-two-4c" class="answer">Mc</label></li>
+            <h5>4. On the periodic table, what is the chemical symbol for Mercury?</h5>
+            <ul id="answers-two-four">
+                <li>
+                    <input type="radio" name="round-two-question-four" value="a" id="round-two-4a" class="form-check-input">
+                    <button class="btn btn-answer incorrect">Ag</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-two-question-four" value="b" id="round-two-4b" class="form-check-input">
+                    <button class="btn btn-answer correct">Hg</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-two-question-four" value="c" id="round-two-4c" class="form-check-input">
+                    <button class="btn btn-answer incorrect">Me</button>
+                </li>
             </ul>
             
-            <h5 class="quiz-question">5. What part of the human body is the mandible?</h5>
-            <ul id="optionstwo-5">
-                <li><input type="radio" name="question1" value="a" id="round-two-5a" class="answer"><label for="round-two-5a" class="answer">Lower Leg</label></li>
-                <li><input type="radio" name="question1" value="b" id="round-two-5b" class="answer"><label for="round-two-5b" class="answer">Lower Back</label></li>
-                <li><input type="radio" name="question1" value="c" id="round-two-5c" class="answer"><label for="round-two-5c" class="answer">Lower Jaw*</label></li>
+            <h5>What part of the human body is the Mandible?</h5>
+            <ul id="answers-two-five">
+                <li>
+                    <input type="radio" name="round-two-question-five" value="a" id="round-two-5a" class="form-check-input"><button class="btn btn-answer incorrect">Lower Leg</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-two-question-five" value="b" id="round-two-5b" class="form-check-input"><button class="btn btn-answer incorrect">Lower Back</button>
+                </li>
+                <li>
+                    <input type="radio" name="round-two-question-five" value="c" id="round-two-5c" class="form-check-input"><button class="btn btn-answer correct">Lower Jaw*</button>
+                </li>
             </ul>
             
-            <button type="button" class="btn next-two submit">Next</button>
+            <button type="button" class="btn-floating btn-large waves-effect waves-light btn">
+                <a href="index.html"><i class="material-icons">home</i></a>
+            </button>
+            <button type="button" class="btn-floating btn-large waves-effect waves-light btn submit"><i class="material-icons">fast_forward</i></button>
         </form>
     </div>
     <!-------------------------------------/ROUND TWO----------->

@@ -22,3 +22,9 @@ $(".btn-quiz").click(function () {
     $(".landing-page-content").hide();
     $(".round-one").show();
 });
+
+//hide round one and show when continue clicked
+$(".next-one").click(function () {
+    $(".round-one").hide();
+    $(".round-two").show();
+});
