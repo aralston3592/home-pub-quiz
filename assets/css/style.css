@@ -4,7 +4,7 @@ body {
     text-align: center;
     font-family: "Roboto", sans-serif;
     background-color: #62acd0;
-    color: #ffebeb;
+    color: #f9ee6c;
 }
 
 .header {
@@ -14,9 +14,13 @@ body {
     padding-bottom: 20px;
 }
 
+/*--------------------------------------------------------------Landing Page---*/
+
 .landing-page-content {
     padding-top: 20vh;
 }
+
+/*--------------------------------------------------------------Buttons---*/
 
 .btn-quiz {
     min-height: 100px;
@@ -29,4 +33,14 @@ body {
 
 .btn:hover {
     background-color: #fbff01;
+}
+
+/*------------------------------------------------------QUIZ ROUNDS--------*/
+
+.quiz-round {
+    padding-bottom: 10%;
+}
+
+.answer {
+    color: #f9ee6c
 }
