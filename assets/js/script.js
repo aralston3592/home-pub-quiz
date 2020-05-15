@@ -23,8 +23,32 @@ $(".btn-quiz").click(function () {
     $(".round-one").show();
 });
 
-//hide round one and show when continue clicked
+//hide round one and show round three when continue clicked
 $(".next-one").click(function () {
     $(".round-one").hide();
     $(".round-two").show();
+});
+
+//hide round two and show round three when continue clicked
+$(".next-two").click(function () {
+    $(".round-two").hide();
+    $(".round-three").show();
+});
+
+//hide round three and show round four when continue clicked
+$(".next-three").click(function () {
+    $(".round-three").hide();
+    $(".round-four").show();
+});
+
+//hide round four and show round five when continue clicked
+$(".next-four").click(function () {
+    $(".round-four").hide();
+    $(".round-five").show();
+});
+
+//hide round five and show round six when continue clicked
+$(".next-five").click(function () {
+    $(".round-five").hide();
+    $(".round-six").show();
 });
