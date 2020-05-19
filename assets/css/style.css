@@ -50,6 +50,10 @@ body {
     padding-bottom: 30px;
 }
 
+ul {
+    min-height: 150px;
+}
+
 .btn-answer {
     background-color: #f9ee6c;
     color: #244656;

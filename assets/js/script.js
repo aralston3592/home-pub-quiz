@@ -5,11 +5,6 @@ $(document).ready(function () {
     $(".landing-page-content").show();
 });
 
-//stop buttons refreshing page
-$(".btn-answer").click( function(event) {
-  event.preventDefault();
-});
-
 //start with score of 0
 let score = 0;
 //number of questions in each round
@@ -68,4 +63,14 @@ $(".next-four").click(function () {
 $(".next-five").click(function () {
     $(".round-five").hide();
     $(".round-six").show();
+});
+
+//stop buttons refreshing page
+$(".btn-answer").click( function(event) {
+    event.preventDefault();
+});
+
+//fades other options when answer is chosen
+$("li").click( function(event) {
+    $(this).siblings().fadeTo(1000, 0.1); 
 });

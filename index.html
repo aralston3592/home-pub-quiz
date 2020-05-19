@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
     <title>Pub Quiz</title>
-    
-</head>
+  </head>
 
-<body>
-    
+  <body>
     <!-------------------------------------LANDING PAGE-------->
 
     <div class="valign-wrapper">
-        <div class="container row landing-page-content">
-            <div class="col s12">
-                <h1 class="header">HOME PUB QUIZ</h1>
-                <div class="divider"></div>
-            </div>
-            <div class="col s12">
-                <h4 class="hide-on-small-only">Hit the start button and see if you can earn yourself a pint by acing our home pub quiz!</h4>
-                <div class="hide-on-small-only divider"></div>
-                <h5 class="header">RULES</h5>
-                <div class="row">
-                    <h6>6 rounds of 5 questions<br>Choose 1 of a possible 3 answers for each question</h6>
-                    <h5>What are you waiting for?</h5>
-                </div>
-            </div>
-            <div class="col s12">
-                <button type="button" class="btn btn-quiz pulse">START QUIZ</button>
-            </div>
+      <div class="container row landing-page-content">
+        <div class="col s12">
+          <h1 class="header">HOME PUB QUIZ</h1>
+          <div class="divider"></div>
         </div>
+        <div class="col s12">
+          <h4 class="hide-on-small-only">
+            Hit the start button and see if you can earn yourself a pint by
+            acing our home pub quiz!
+          </h4>
+          <div class="hide-on-small-only divider"></div>
+          <h5 class="header">RULES</h5>
+          <div class="row">
+            <h6>
+              6 rounds of 5 questions<br />Choose 1 of a possible 3 answers for
+              each question
+            </h6>
+            <h5>What are you waiting for?</h5>
+          </div>
+        </div>
+        <div class="col s12">
+          <button type="button" class="btn btn-quiz pulse">START QUIZ</button>
+        </div>
+      </div>
     </div>
     <!-------------------------------------/LANDING PAGE-------->
 
@@ -45,523 +54,1193 @@
 
     <!-------------------------------------ROUND ONE------------>
     <div class="container round-one quiz-round">
-        <h1 class="header">HOME PUB QUIZ</h1>
-        <h3>ROUND 1 - FOOD & DRINK</h3>
-        <form>
-            <h5>1. Which pastry are profiteroles made from?</h5>
-            <ul id="answers-one-one">
-                <li>
-                    <input type="radio" name="round-one-question-one" value="a" id="round-one-1a" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Puff Pastry</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-one-question-one" value="b" id="round-one-1b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Filo Pastry</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-one-question-one" value="c" id="round-one-1c" class="form-check-input">
-                    <button class="btn btn-answer correct">Choux Pastry*</button>
-                </li>
-            </ul>
-            
-            <h5>2. What is the most expensive spice in the world by weight?</h5>
-            <ul id="answers-one-two">
-                <li>
-                    <input type="radio" name="round-one-question-two" value="a" id="round-one-2a" class="form-check-input"><button class="btn btn-answer correct">Saffron*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-one-question-two" value="b" id="round-one-2b" class="form-check-input"><button class="btn btn-answer incorrect">Ginger</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-one-question-two" value="c" id="round-one-2c" class="form-check-input"><button class="btn btn-answer incorrect">Vanilla</button>
-                </li>
-            </ul>
-                        
-            <h5>3. Which fast-food franchise has the largest number of restaurants in the world?</h5>
-            <ul id="answers-one-three">
-                <li>
-                    <input type="radio" name="round-one-question-three" value="a" id="round-one-3a" class="form-check-input">
-                    <button class="btn btn-answer incorrect">McDonald's</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-one-question-three" value="b" id="round-one-3b" class="form-check-input">
-                    <button class="btn btn-answer correct">Subway*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-one-question-three" value="c" id="round-one-3c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">KFC</button>
-                </li>
-            </ul>
-            
-            <h5>4. A scandinavian meal served buffet style with multiple hot and cold dishes is known as a what?</h5>
-            <ul id="answers-one-four">
-                <li>
-                    <input type="radio" name="round-one-question-four" value="a" id="round-one-4a" class="form-check-input">
-                    <button class="btn btn-answer correct">Smorgasbord*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-one-question-four" value="b" id="round-one-4b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Tapas</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-one-question-four" value="c" id="round-one-4c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Rodizio</button>
-                </li>
-            </ul>
-            
-            <h5>5. Which animal provides the milk for mozzarella cheese?</h5>
-            <ul id="answers-one-five">
-                <li>
-                    <input type="radio" name="round-one-question-five" value="a" id="round-one-5a" class="form-check-input"><button class="btn btn-answer incorrect">Caribou</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-one-question-five" value="b" id="round-one-5b" class="form-check-input"><button class="btn btn-answer correct">Buffalo*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-one-question-five" value="c" id="round-one-5c" class="form-check-input"><button class="btn btn-answer incorrect">Yak</button>
-                </li>
-            </ul>
-            
-            <a href="index.html" class="btn-floating btn-large waves-effect waves-light btn"><i class="material-icons">home</i></a>
-            <button type="button" class="btn-floating btn-large waves-effect waves-light btn submit next-one"><i class="material-icons">fast_forward</i></button>
-        </form>
+      <h1 class="header">HOME PUB QUIZ</h1>
+      <h3>ROUND 1 - FOOD & DRINK</h3>
+      <form>
+        <h5>1. Which pastry are profiteroles made from?</h5>
+        <ul id="answers-one-one">
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-one"
+              value="a"
+              id="round-one-1a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Puff Pastry</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-one"
+              value="b"
+              id="round-one-1b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Filo Pastry</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-one"
+              value="c"
+              id="round-one-1c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Choux Pastry</button>
+          </li>
+        </ul>
+
+        <h5>2. What is the most expensive spice in the world by weight?</h5>
+        <ul id="answers-one-two">
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-two"
+              value="a"
+              id="round-one-2a"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">Saffron</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-two"
+              value="b"
+              id="round-one-2b"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Ginger</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-two"
+              value="c"
+              id="round-one-2c"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Vanilla</button>
+          </li>
+        </ul>
+
+        <h5>
+          3. Which fast-food franchise has the largest number of restaurants in
+          the world?
+        </h5>
+        <ul id="answers-one-three">
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-three"
+              value="a"
+              id="round-one-3a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">McDonald's</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-three"
+              value="b"
+              id="round-one-3b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Subway</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-three"
+              value="c"
+              id="round-one-3c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">KFC</button>
+          </li>
+        </ul>
+
+        <h5>
+          4. A scandinavian meal served buffet style with multiple hot and cold
+          dishes is known as a what?
+        </h5>
+        <ul id="answers-one-four">
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-four"
+              value="a"
+              id="round-one-4a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Smorgasbord</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-four"
+              value="b"
+              id="round-one-4b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Tapas</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-four"
+              value="c"
+              id="round-one-4c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Rodizio</button>
+          </li>
+        </ul>
+
+        <h5>5. Which animal provides the milk for mozzarella cheese?</h5>
+        <ul id="answers-one-five">
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-five"
+              value="a"
+              id="round-one-5a"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Caribou</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-five"
+              value="b"
+              id="round-one-5b"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">Buffalo</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-five"
+              value="c"
+              id="round-one-5c"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Yak</button>
+          </li>
+        </ul>
+
+        <div class="progress">
+          <div class="determinate" style="width: 17%;"></div>
+        </div>
+
+        <a
+          href="index.html"
+          class="btn-floating btn-large waves-effect waves-light btn"
+          ><i class="material-icons">home</i></a
+        >
+        <button
+          type="button"
+          class="btn-floating btn-large waves-effect waves-light btn submit next-one"
+        >
+          <i class="material-icons">fast_forward</i>
+        </button>
+      </form>
     </div>
     <!-------------------------------------/ROUND ONE----------->
 
     <!-------------------------------------ROUND TWO------------>
     <div class="container round-two quiz-round">
-        <h1 class="header">HOME PUB QUIZ</h1>
-        <h3>ROUND 2 - SCIENCE & NATURE</h3>
-        <form>
-            <h5>What is the collective name for a group of crows?</h5>
-            <ul id="answers-two-one">
-                <li>
-                    <input type="radio" name="round-two-question-one" value="a" id="round-two-1a" class="form-check-input">
-                    <button class="btn btn-answer correct">Murder*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-two-question-one" value="b" id="round-two-1b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Parliament</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-two-question-one" value="c" id="round-two-1c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Mallard</button>
-                </li>
-            </ul>
-            
-            <h5>2. How many hearts does an octopuss have?</h5>
-            <ul id="answers-two-two">
-                <li>
-                    <input type="radio" name="round-two-question-two" value="a" id="round-two-2a" class="form-check-input"><button class="btn btn-answer incorrect">Two</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-two-question-two" value="b" id="round-two-2b" class="form-check-input"><button class="btn btn-answer incorrect">Four</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-two-question-two" value="c" id="round-two-2c" class="form-check-input"><button class="btn btn-answer correct">Three*</button>
-                </li>
-            </ul>
-                        
-            <h5>3. What is the largest moon of Saturn called?</h5>
-            <ul id="answers-two-three">
-                <li>
-                    <input type="radio" name="round-two-question-three" value="a" id="round-two-3a" class="form-check-input">
-                    <button class="btn btn-answer correct">Titan*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-two-question-three" value="b" id="round-two-3b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Mimas</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-two-question-three" value="c" id="round-two-3c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Neptune</button>
-                </li>
-            </ul>
-            
-            <h5>4. On the periodic table, what is the chemical symbol for Mercury?</h5>
-            <ul id="answers-two-four">
-                <li>
-                    <input type="radio" name="round-two-question-four" value="a" id="round-two-4a" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Ag</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-two-question-four" value="b" id="round-two-4b" class="form-check-input">
-                    <button class="btn btn-answer capitalize correct">Hg</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-two-question-four" value="c" id="round-two-4c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Me</button>
-                </li>
-            </ul>
-            
-            <h5>What part of the human body is the Mandible?</h5>
-            <ul id="answers-two-five">
-                <li>
-                    <input type="radio" name="round-two-question-five" value="a" id="round-two-5a" class="form-check-input"><button class="btn btn-answer incorrect">Lower Leg</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-two-question-five" value="b" id="round-two-5b" class="form-check-input"><button class="btn btn-answer incorrect">Lower Back</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-two-question-five" value="c" id="round-two-5c" class="form-check-input"><button class="btn btn-answer correct">Lower Jaw*</button>
-                </li>
-            </ul>
-            
-            <a href="index.html" class="btn-floating btn-large waves-effect waves-light btn"><i class="material-icons">home</i></a>
-            <button type="button" class="btn-floating btn-large waves-effect waves-light btn submit next-two"><i class="material-icons">fast_forward</i></button>
-        </form>
+      <h1 class="header">HOME PUB QUIZ</h1>
+      <h3>ROUND 2 - SCIENCE & NATURE</h3>
+      <form>
+        <h5>What is the collective name for a group of crows?</h5>
+        <ul id="answers-two-one">
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-one"
+              value="a"
+              id="round-two-1a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Murder</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-one"
+              value="b"
+              id="round-two-1b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Parliament</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-one"
+              value="c"
+              id="round-two-1c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Mallard</button>
+          </li>
+        </ul>
+
+        <h5>2. How many hearts does an octopus have?</h5>
+        <ul id="answers-two-two">
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-two"
+              value="a"
+              id="round-two-2a"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Two</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-two"
+              value="b"
+              id="round-two-2b"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Four</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-two"
+              value="c"
+              id="round-two-2c"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">Three</button>
+          </li>
+        </ul>
+
+        <h5>3. What is the largest moon of Saturn called?</h5>
+        <ul id="answers-two-three">
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-three"
+              value="a"
+              id="round-two-3a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Titan</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-three"
+              value="b"
+              id="round-two-3b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Mimas</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-three"
+              value="c"
+              id="round-two-3c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Neptune</button>
+          </li>
+        </ul>
+
+        <h5>
+          4. On the periodic table, what is the chemical symbol for Mercury?
+        </h5>
+        <ul id="answers-two-four">
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-four"
+              value="a"
+              id="round-two-4a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Ag</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-four"
+              value="b"
+              id="round-two-4b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Hg</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-four"
+              value="c"
+              id="round-two-4c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Me</button>
+          </li>
+        </ul>
+
+        <h5>What part of the human body is the Mandible?</h5>
+        <ul id="answers-two-five">
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-five"
+              value="a"
+              id="round-two-5a"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Lower Leg</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-five"
+              value="b"
+              id="round-two-5b"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Lower Back</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-two-question-five"
+              value="c"
+              id="round-two-5c"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">Lower Jaw</button>
+          </li>
+        </ul>
+
+        <div class="progress">
+          <div class="determinate" style="width: 34%;"></div>
+        </div>
+        
+        <a
+          href="index.html"
+          class="btn-floating btn-large waves-effect waves-light btn"
+          ><i class="material-icons">home</i></a
+        >
+        <button
+          type="button"
+          class="btn-floating btn-large waves-effect waves-light btn submit next-two"
+        >
+          <i class="material-icons">fast_forward</i>
+        </button>
+      </form>
     </div>
     <!-------------------------------------/ROUND TWO----------->
 
     <!-------------------------------------ROUND THREE------------>
     <div class="container round-three quiz-round">
-        <h1 class="header">HOME PUB QUIZ</h1>
-        <h3>ROUND 3 - MOVIES</h3>
-        <h5>In this round you must guess the movie from the quote...</h5>
-        <form>
-            <h5>1. "A cencus take once tried to test me. I ate his live with some fava beans and a nice Chianti."</h5>
-            <ul id="answers-three-one">
-                <li>
-                    <input type="radio" name="round-three-question-one" value="a" id="round-three-1a" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Halloween</button>
-                </li>
-                <li class="pagination">
-                    <input type="radio" name="round-three-question-one" value="b" id="round-three-1b" class="form-check-input">
-                    <button class="btn btn-answer correct">Silence of the Lambs*</button>
-                </li>
-                <li class="pagination">
-                    <input type="radio" name="round-three-question-one" value="c" id="round-three-1c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Bone Tomahawk</button>
-                </li>
-            </ul>
-            
-            <h5>2. "I've been touched by your kids... and I'm pretty sure I've touched them."</h5>
-            <ul id="answers-three-two">
-                <li>
-                    <input type="radio" name="round-one-question-two" value="a" id="round-three-2a" class="form-check-input"><button class="btn btn-answer correct">Sachool of Rock*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-three-question-two" value="b" id="round-three-2b" class="form-check-input"><button class="btn btn-answer incorrect">St. Trinian's</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-three-question-two" value="c" id="round-three-2c" class="form-check-input"><button class="btn btn-answer incorrect">21 Jump Street</button>
-                </li>
-            </ul>
-                        
-            <h5>3. "That rug really tied the room together, did it not?"</h5>
-            <ul id="answers-three-three">
-                <li>
-                    <input type="radio" name="round-three-question-three" value="a" id="round-three-3a" class="form-check-input">
-                    <button class="btn btn-answer correct">The Big Lebowski*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-three-question-three" value="b" id="round-three-3b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Burn After Reading</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-three-question-three" value="c" id="round-three-3c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">The Big Short</button>
-                </li>
-            </ul>
-            
-            <h5>4. "I'm not bad, I'm just drawn that way."</h5>
-            <ul id="answers-three-four">
-                <li>
-                    <input type="radio" name="round-three-question-four" value="a" id="round-three-4a" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Space Jam</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-three-question-four" value="b" id="round-three-4b" class="form-check-input">
-                    <button class="btn btn-answer correct">Who Framed Roger Rabbit?*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-three-question-four" value="c" id="round-three-4c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Toy Story</button>
-                </li>
-            </ul>
-            
-            <h5>5. "Faulkner is cauc...asian. Well, they got that wrong, because you're obviously white."</h5>
-            <ul id="answers-three-five">
-                <li>
-                    <input type="radio" name="round-three-question-five" value="a" id="round-three-5a" class="form-check-input"><button class="btn btn-answer incorrect">Escape Plan</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-three-question-five" value="b" id="round-three-5b" class="form-check-input"><button class="btn btn-answer incorrect">The Hunt for Red October</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-three-question-five" value="c" id="round-three-5c" class="form-check-input"><button class="btn btn-answer correct">The Hunt for the Wilderpeople*</button>
-                </li>
-            </ul>
-            
-            <a href="index.html" class="btn-floating btn-large waves-effect waves-light btn"><i class="material-icons">home</i></a>
-            <button type="button" class="btn-floating btn-large waves-effect waves-light btn submit next-three"><i class="material-icons">fast_forward</i></button>
-        </form>
+      <h1 class="header">HOME PUB QUIZ</h1>
+      <h3>ROUND 3 - MOVIES</h3>
+      <h5>In this round you must guess the movie from the quote...</h5>
+      <form>
+        <h5>
+          1. "A cencus take once tried to test me. I ate his liver with some fava
+          beans and a nice Chianti."
+        </h5>
+        <ul id="answers-three-one">
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-one"
+              value="a"
+              id="round-three-1a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Halloween</button>
+          </li>
+          <li class="pagination">
+            <input
+              type="radio"
+              name="round-three-question-one"
+              value="b"
+              id="round-three-1b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">
+              Silence of the Lambs
+            </button>
+          </li>
+          <li class="pagination">
+            <input
+              type="radio"
+              name="round-three-question-one"
+              value="c"
+              id="round-three-1c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Bone Tomahawk</button>
+          </li>
+        </ul>
+
+        <h5>
+          2. "I've been touched by your kids... and I'm pretty sure I've touched
+          them."
+        </h5>
+        <ul id="answers-three-two">
+          <li>
+            <input
+              type="radio"
+              name="round-one-question-two"
+              value="a"
+              id="round-three-2a"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">Sachool of Rock</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-two"
+              value="b"
+              id="round-three-2b"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">St. Trinian's</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-two"
+              value="c"
+              id="round-three-2c"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">21 Jump Street</button>
+          </li>
+        </ul>
+
+        <h5>3. "That rug really tied the room together, did it not?"</h5>
+        <ul id="answers-three-three">
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-three"
+              value="a"
+              id="round-three-3a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">The Big Lebowski</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-three"
+              value="b"
+              id="round-three-3b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Burn After Reading</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-three"
+              value="c"
+              id="round-three-3c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">The Big Short</button>
+          </li>
+        </ul>
+
+        <h5>4. "I'm not bad, I'm just drawn that way."</h5>
+        <ul id="answers-three-four">
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-four"
+              value="a"
+              id="round-three-4a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Space Jam</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-four"
+              value="b"
+              id="round-three-4b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">
+              Who Framed Roger Rabbit?*
+            </button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-four"
+              value="c"
+              id="round-three-4c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Toy Story</button>
+          </li>
+        </ul>
+
+        <h5>
+          5. "Faulkner is cauc...asian. Well, they got that wrong, because
+          you're obviously white."
+        </h5>
+        <ul id="answers-three-five">
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-five"
+              value="a"
+              id="round-three-5a"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Escape Plan</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-five"
+              value="b"
+              id="round-three-5b"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">
+              The Hunt for Red October
+            </button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-three-question-five"
+              value="c"
+              id="round-three-5c"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">
+              The Hunt for the Wilderpeople
+            </button>
+          </li>
+        </ul>
+
+        <div class="progress">
+          <div class="determinate" style="width: 50%;"></div>
+        </div>
+
+        <a
+          href="index.html"
+          class="btn-floating btn-large waves-effect waves-light btn"
+          ><i class="material-icons">home</i></a
+        >
+        <button
+          type="button"
+          class="btn-floating btn-large waves-effect waves-light btn submit next-three"
+        >
+          <i class="material-icons">fast_forward</i>
+        </button>
+      </form>
     </div>
     <!-------------------------------------/ROUND THREE----------->
 
     <!-------------------------------------ROUND FOUR------------>
     <div class="container round-four quiz-round">
-        <h1 class="header">HOME PUB QUIZ</h1>
-        <h3>ROUND 4 - MUSIC</h3>
-        <form>
-            <h5>1. What is Elton John's real name?</h5>
-            <ul id="answers-four-one">
-                <li>
-                    <input type="radio" name="round-four-question-one" value="a" id="round-four-1a" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Dwayne Johnson</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-four-question-one" value="b" id="round-four-1b" class="form-check-input">
-                    <button class="btn btn-answer correct">Reginald Dwight*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-four-question-one" value="c" id="round-four-1c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Dwight Fletcher Reynolds</button>
-                </li>
-            </ul>
-            
-            <h5>2. Who was the lead singer on the Monkees' hit 'Daydream Believer'?</h5>
-            <ul id="answers-four-two">
-                <li>
-                    <input type="radio" name="round-four-question-two" value="a" id="round-four-2a" class="form-check-input"><button class="btn btn-answer incorrect">Ray Davies</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-four-question-two" value="b" id="round-four-2b" class="form-check-input"><button class="btn btn-answer incorrect">Mike Love</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-four-question-two" value="c" id="round-four-2c" class="form-check-input"><button class="btn btn-answer correct">Davy Jones*</button>
-                </li>
-            </ul>
-                        
-            <h5>3. In which year did Freddie Mercury die?</h5>
-            <ul id="answers-four-three">
-                <li>
-                    <input type="radio" name="round-four-question-three" value="a" id="round-four-3a" class="form-check-input">
-                    <button class="btn btn-answer correct">1991*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-four-question-three" value="b" id="round-four-3b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">1989</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-four-question-three" value="c" id="round-four-3c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">1985</button>
-                </li>
-            </ul>
-            
-            <h5>4. What is the title of The Killers' 2004 debut album?</h5>
-            <ul id="answers-four-four">
-                <li>
-                    <input type="radio" name="round-four-question-four" value="a" id="round-four-4a" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Hot Rocks</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-four-question-four" value="b" id="round-four-4b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Sam's Town</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-four-question-four" value="c" id="round-four-4c" class="form-check-input">
-                    <button class="btn btn-answer correct">Hot Fuss*</button>
-                </li>
-            </ul>
-            
-            <h5>5. Which artist had a number one hit with the song 'Sledgehammer'?</h5>
-            <ul id="answers-four-five">
-                <li>
-                    <input type="radio" name="round-four-question-five" value="a" id="round-four-5a" class="form-check-input"><button class="btn btn-answer correct">Peter Gabriel*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-four-question-five" value="b" id="round-four-5b" class="form-check-input"><button class="btn btn-answer incorrect">MC Hammer</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-four-question-five" value="c" id="round-four-5c" class="form-check-input"><button class="btn btn-answer incorrect">Phil Collins</button>
-                </li>
-            </ul>
-            
-            <a href="index.html" class="btn-floating btn-large waves-effect waves-light btn"><i class="material-icons">home</i></a>
-            <button type="button" class="btn-floating btn-large waves-effect waves-light btn submit next-four"><i class="material-icons">fast_forward</i></button>
-        </form>
+      <h1 class="header">HOME PUB QUIZ</h1>
+      <h3>ROUND 4 - MUSIC</h3>
+      <form>
+        <h5>1. What is Elton John's real name?</h5>
+        <ul id="answers-four-one">
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-one"
+              value="a"
+              id="round-four-1a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Dwayne Johnson</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-one"
+              value="b"
+              id="round-four-1b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Reginald Dwight</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-one"
+              value="c"
+              id="round-four-1c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">
+              Dwight Fletcher Reynolds
+            </button>
+          </li>
+        </ul>
+
+        <h5>
+          2. Who was the lead singer on the Monkees' hit 'Daydream Believer'?
+        </h5>
+        <ul id="answers-four-two">
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-two"
+              value="a"
+              id="round-four-2a"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Ray Davies</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-two"
+              value="b"
+              id="round-four-2b"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Mike Love</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-two"
+              value="c"
+              id="round-four-2c"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">Davy Jones</button>
+          </li>
+        </ul>
+
+        <h5>3. In which year did Freddie Mercury die?</h5>
+        <ul id="answers-four-three">
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-three"
+              value="a"
+              id="round-four-3a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">1991</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-three"
+              value="b"
+              id="round-four-3b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">1989</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-three"
+              value="c"
+              id="round-four-3c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">1985</button>
+          </li>
+        </ul>
+
+        <h5>4. What is the title of The Killers' 2004 debut album?</h5>
+        <ul id="answers-four-four">
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-four"
+              value="a"
+              id="round-four-4a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Hot Rocks</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-four"
+              value="b"
+              id="round-four-4b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Sam's Town</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-four"
+              value="c"
+              id="round-four-4c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Hot Fuss</button>
+          </li>
+        </ul>
+
+        <h5>
+          5. Which artist had a number one hit with the song 'Sledgehammer'?
+        </h5>
+        <ul id="answers-four-five">
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-five"
+              value="a"
+              id="round-four-5a"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">Peter Gabriel</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-five"
+              value="b"
+              id="round-four-5b"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">MC Hammer</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-four-question-five"
+              value="c"
+              id="round-four-5c"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Phil Collins</button>
+          </li>
+        </ul>
+
+        <div class="progress">
+          <div class="determinate" style="width: 67%;"></div>
+        </div>
+
+        <a
+          href="index.html"
+          class="btn-floating btn-large waves-effect waves-light btn"
+          ><i class="material-icons">home</i></a
+        >
+        <button
+          type="button"
+          class="btn-floating btn-large waves-effect waves-light btn submit next-four"
+        >
+          <i class="material-icons">fast_forward</i>
+        </button>
+      </form>
     </div>
     <!-------------------------------------/ROUND FOUR----------->
-   
+
     <!-------------------------------------ROUND FIVE------------>
     <div class="container round-five quiz-round">
-        <h1 class="header">HOME PUB QUIZ</h1>
-        <h3>ROUND 5 - SPORT</h3>
-        <form>
-            <h5>1. What is the diameter of a basketball hoop in inches?</h5>
-            <ul id="answers-five-one">
-                <li>
-                    <input type="radio" name="round-five-question-one" value="a" id="round-five-1a" class="form-check-input">
-                    <button class="btn btn-answer correct">Eighteen*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-five-question-one" value="b" id="round-five-1b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Twenty Two</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-five-question-one" value="c" id="round-five-1c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Thirteen</button>
-                </li>
-            </ul>
-            
-            <h5>2. In American Football, how many points is a touchdown worth?</h5>
-            <ul id="answers-five-two">
-                <li>
-                    <input type="radio" name="round-five-question-two" value="a" id="round-five-2a" class="form-check-input"><button class="btn btn-answer incorrect">Four</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-five-question-two" value="b" id="round-five-2b" class="form-check-input"><button class="btn btn-answer correct">Six*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-five-question-two" value="c" id="round-five-2c" class="form-check-input"><button class="btn btn-answer incorrect">Two</button>
-                </li>
-            </ul>
-                        
-            <h5>3. Which African country was the first to qualify for a FIFA World Cup?</h5>
-            <ul id="answers-five-three">
-                <li>
-                    <input type="radio" name="round-five-question-three" value="a" id="round-five-3a" class="form-check-input">
-                    <button class="btn btn-answer incorrect">South Africa</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-five-question-three" value="b" id="round-five-3b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Nigeria</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-five-question-three" value="c" id="round-five-3c" class="form-check-input">
-                    <button class="btn btn-answer correct">Egypt*</button>
-                </li>
-            </ul>
-            
-            <h5>4. How many dimples does the average golf ball have?</h5>
-            <ul id="answers-five-four">
-                <li>
-                    <input type="radio" name="round-five-question-four" value="a" id="round-five-4a" class="form-check-input">
-                    <button class="btn btn-answer correct">336*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-five-question-four" value="b" id="round-five-4b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">225</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-five-question-four" value="c" id="round-five-4c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">114</button>
-                </li>
-            </ul>
-            
-            <h5>5. Which country has competed the most times at the summer Olympics without winning a gold medal?</h5>
-            <ul id="answers-five-five">
-                <li>
-                    <input type="radio" name="round-five-question-five" value="a" id="round-five-5a" class="form-check-input"><button class="btn btn-answer incorrect">Indonesia</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-five-question-five" value="b" id="round-five-5b" class="form-check-input"><button class="btn btn-answer correct">The Philippines*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-five-question-five" value="c" id="round-five-5c" class="form-check-input"><button class="btn btn-answer incorrect">Central African Republic</button>
-                </li>
-            </ul>
-            
-            <a href="index.html" class="btn-floating btn-large waves-effect waves-light btn"><i class="material-icons">home</i></a>
-            <button type="button" class="btn-floating btn-large waves-effect waves-light btn submit next-five"><i class="material-icons">fast_forward</i></button>
-        </form>
+      <h1 class="header">HOME PUB QUIZ</h1>
+      <h3>ROUND 5 - SPORT</h3>
+      <form>
+        <h5>1. What is the diameter of a basketball hoop in inches?</h5>
+        <ul id="answers-five-one">
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-one"
+              value="a"
+              id="round-five-1a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Eighteen</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-one"
+              value="b"
+              id="round-five-1b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Twenty Two</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-one"
+              value="c"
+              id="round-five-1c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Thirteen</button>
+          </li>
+        </ul>
+
+        <h5>2. In American Football, how many points is a touchdown worth?</h5>
+        <ul id="answers-five-two">
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-two"
+              value="a"
+              id="round-five-2a"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Four</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-two"
+              value="b"
+              id="round-five-2b"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">Six</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-two"
+              value="c"
+              id="round-five-2c"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Two</button>
+          </li>
+        </ul>
+
+        <h5>
+          3. Which African country was the first to qualify for a FIFA World
+          Cup?
+        </h5>
+        <ul id="answers-five-three">
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-three"
+              value="a"
+              id="round-five-3a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">South Africa</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-three"
+              value="b"
+              id="round-five-3b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Nigeria</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-three"
+              value="c"
+              id="round-five-3c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Egypt</button>
+          </li>
+        </ul>
+
+        <h5>4. How many dimples does the average golf ball have?</h5>
+        <ul id="answers-five-four">
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-four"
+              value="a"
+              id="round-five-4a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">336</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-four"
+              value="b"
+              id="round-five-4b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">225</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-four"
+              value="c"
+              id="round-five-4c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">114</button>
+          </li>
+        </ul>
+
+        <h5>
+          5. Which country has competed the most times at the summer Olympics
+          without winning a gold medal?
+        </h5>
+        <ul id="answers-five-five">
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-five"
+              value="a"
+              id="round-five-5a"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Indonesia</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-five"
+              value="b"
+              id="round-five-5b"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">The Philippines</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-five-question-five"
+              value="c"
+              id="round-five-5c"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">
+              Central African Republic
+            </button>
+          </li>
+        </ul>
+
+        <div class="progress">
+          <div class="determinate" style="width: 84%;"></div>
+        </div>
+
+        <a
+          href="index.html"
+          class="btn-floating btn-large waves-effect waves-light btn"
+          ><i class="material-icons">home</i></a
+        >
+        <button
+          type="button"
+          class="btn-floating btn-large waves-effect waves-light btn submit next-five"
+        >
+          <i class="material-icons">fast_forward</i>
+        </button>
+      </form>
     </div>
     <!-------------------------------------/ROUND FIVE----------->
-    
+
     <!-------------------------------------ROUND SIX------------>
     <div class="container round-six quiz-round">
-        <h1 class="header">HOME PUB QUIZ</h1>
-        <h3>ROUND 6 - GENERAL KNOWLEDGE</h3>
-        <form>
-            <h5>1. What is the capital city of Mali?</h5>
-            <ul id="answers-six-one">
-                <li>
-                    <input type="radio" name="round-six-question-one" value="a" id="round-six-1a" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Baku</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-six-question-one" value="b" id="round-six-1b" class="form-check-input">
-                    <button class="btn btn-answer correct">Bamako*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-six-question-one" value="c" id="round-six-1c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Bangui</button>
-                </li>
-            </ul>
-            
-            <h5>2. Neil Armstrong, Buzz Aldrin and...? Who was the third astronaut involved in the Apollo 11 mission that landed on the moon?</h5>
-            <ul id="answers-six-two">
-                <li>
-                    <input type="radio" name="round-six-question-two" value="a" id="round-six-2a" class="form-check-input"><button class="btn btn-answer incorrect">Tom Johnston</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-six-question-two" value="b" id="round-six-2b" class="form-check-input"><button class="btn btn-answer incorrect">Michael Jordon</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-six-question-two" value="c" id="round-six-2c" class="form-check-input"><button class="btn btn-answer correct">Micahel Collins*</button>
-                </li>
-            </ul>
-                        
-            <h5>3. Which was the fist James Bond movie to feature Roger Moore in the title role?</h5>
-            <ul id="answers-six-three">
-                <li>
-                    <input type="radio" name="round-six-question-three" value="a" id="round-six-3a" class="form-check-input">
-                    <button class="btn btn-answer correct">Live & Let Die*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-six-question-three" value="b" id="round-six-3b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">For Your Eyes Only</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-six-question-three" value="c" id="round-six-3c" class="form-check-input">
-                    <button class="btn btn-answer incorrect">The Man with the Golden Gun</button>
-                </li>
-            </ul>
-            
-            <h5>4. What flower is named after the Latin word for wolf?</h5>
-            <ul id="answers-six-four">
-                <li>
-                    <input type="radio" name="round-six-question-four" value="a" id="round-six-4a" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Watsonia</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-six-question-four" value="b" id="round-six-4b" class="form-check-input">
-                    <button class="btn btn-answer incorrect">Lunaria</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-six-question-four" value="c" id="round-six-4c" class="form-check-input">
-                    <button class="btn btn-answer correct">Lupin*</button>
-                </li>
-            </ul>
-            
-            <h5>5. What is Postman Pat's surname?</h5>
-            <ul id="answers-six-five">
-                <li>
-                    <input type="radio" name="round-six-question-five" value="a" id="round-six-5a" class="form-check-input"><button class="btn btn-answer incorrect">Jones</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-six-question-five" value="b" id="round-six-5b" class="form-check-input"><button class="btn btn-answer correct">Clifton*</button>
-                </li>
-                <li>
-                    <input type="radio" name="round-six-question-five" value="c" id="round-six-5c" class="form-check-input"><button class="btn btn-answer incorrect">Packer</button>
-                </li>
-            </ul>
-            
-            <a href="index.html" class="btn-floating btn-large waves-effect waves-light btn"><i class="material-icons">home</i></a>
-            <button type="button" class="btn-floating btn-large waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons">check</i></button>
-    
-        </form>
+      <h1 class="header">HOME PUB QUIZ</h1>
+      <h3>ROUND 6 - GENERAL KNOWLEDGE</h3>
+      <form>
+        <h5>1. What is the capital city of Mali?</h5>
+        <ul id="answers-six-one">
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-one"
+              value="a"
+              id="round-six-1a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Baku</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-one"
+              value="b"
+              id="round-six-1b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Bamako</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-one"
+              value="c"
+              id="round-six-1c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Bangui</button>
+          </li>
+        </ul>
+
+        <h5>
+          2. Neil Armstrong, Buzz Aldrin and...? Who was the third astronaut
+          involved in the Apollo 11 mission that landed on the moon?
+        </h5>
+        <ul id="answers-six-two">
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-two"
+              value="a"
+              id="round-six-2a"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Tom Johnston</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-two"
+              value="b"
+              id="round-six-2b"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Michael Jordon</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-two"
+              value="c"
+              id="round-six-2c"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">Michael Collins</button>
+          </li>
+        </ul>
+
+        <h5>
+          3. Which was the first James Bond movie to feature Roger Moore in the
+          title role?
+        </h5>
+        <ul id="answers-six-three">
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-three"
+              value="a"
+              id="round-six-3a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Live & Let Die</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-three"
+              value="b"
+              id="round-six-3b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">For Your Eyes Only</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-three"
+              value="c"
+              id="round-six-3c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">
+              The Man with the Golden Gun
+            </button>
+          </li>
+        </ul>
+
+        <h5>4. What flower is named after the Latin word for wolf?</h5>
+        <ul id="answers-six-four">
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-four"
+              value="a"
+              id="round-six-4a"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Watsonia</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-four"
+              value="b"
+              id="round-six-4b"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer incorrect">Lunaria</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-four"
+              value="c"
+              id="round-six-4c"
+              class="form-check-input"
+            />
+            <button class="btn btn-answer correct">Lupin</button>
+          </li>
+        </ul>
+
+        <h5>5. What is Postman Pat's surname?</h5>
+        <ul id="answers-six-five">
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-five"
+              value="a"
+              id="round-six-5a"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Jones</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-five"
+              value="b"
+              id="round-six-5b"
+              class="form-check-input"
+            /><button class="btn btn-answer correct">Clifton</button>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="round-six-question-five"
+              value="c"
+              id="round-six-5c"
+              class="form-check-input"
+            /><button class="btn btn-answer incorrect">Packer</button>
+          </li>
+        </ul>
+
+        <div class="progress">
+          <div class="determinate" style="width: 100%;"></div>
+        </div>
+
+        <a
+          href="index.html"
+          class="btn-floating btn-large waves-effect waves-light btn"
+          ><i class="material-icons">home</i></a
+        >
+        <button
+          type="button"
+          class="btn-floating btn-large waves-effect waves-light btn score"
+        >
+          <i class="material-icons">check</i>
+        </button>
+      </form>
     </div>
     <!-------------------------------------/ROUND SIX----------->
-   
+
     <!-------------------------------------/QUIZ---------------->
-        
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-------------------------------------SCORE---------------->
+
+    
+    <!-------------------------------------/SCORE--------------->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
-
-</body>
-
-
+  </body>
 </html>
