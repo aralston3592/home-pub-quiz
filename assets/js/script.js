@@ -1,21 +1,38 @@
-//start with score of 0
-let score = 0;
-//number of questions in each round
-let roundTotal = 5;
-//number of questions total
-let total = 10;
-//points given for each answer
-let point = 1;
-//maximum achievable score
-let maxScore = point * total;
-
-
 $(document).ready(function () {
     //hide quiz on loading
     $(".quiz-round").hide();
     //show lading page content
     $(".landing-page-content").show();
 });
+
+//stop buttons refreshing page
+$(".btn-answer").click( function(event) {
+  event.preventDefault();
+});
+
+//start with score of 0
+let score = 0;
+//number of questions in each round
+let roundTotal = 5;
+//number of questions total
+let total = 30;
+//points given for each answer
+let point = 1;
+//maximum achievable score
+let maxScore = point * total;
+
+let answer = document.getElementsByClassName("btn-answer")
+let correct = document.getElementsByClassName("correct")
+// Add 1 to score and colour correct answers green.
+$(".correct").click(function() {
+    this.style.backgroundColor = "green";
+    score++;
+});
+
+//turn answer red if incorrect 
+$(".incorrect").click(function() {
+    this.style.backgroundColor = "red";
+})
 
 //hide landing page content and show round one when start button is clicked
 $(".btn-quiz").click(function () {
