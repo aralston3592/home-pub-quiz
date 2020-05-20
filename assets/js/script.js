@@ -65,12 +65,21 @@ $(".next-five").click(function () {
     $(".round-six").show();
 });
 
+//hides last round and shows results on result page
+$(".score").click(function () {
+    $(".round-six").hide();
+    $(".score-page-content").show();
+    //show score on score section
+    document.getElementById("score").innerHTML = score + "/" + total;
+});
+
+
 //stop buttons refreshing page
-$(".btn-answer").click( function(event) {
+$(".btn-answer").click(function(event) {
     event.preventDefault();
 });
 
 //fades other options when answer is chosen
 $("li").click( function(event) {
-    $(this).siblings().fadeTo(1000, 0.1); 
+    $(this).siblings().fadeTo(500, 0.1).disabled = true;
 });
