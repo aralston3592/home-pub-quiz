@@ -40,6 +40,9 @@
               6 rounds of 5 questions<br />Choose 1 of a possible 3 answers for
               each question
             </h6>
+            <h6>
+              1 point awarded for each correct answer<br />1 point deducted for each incorrect answer  
+            </h6>
             <h5>What are you waiting for?</h5>
           </div>
         </div>
@@ -236,18 +239,19 @@
           class="btn-floating btn-large waves-effect waves-light btn"
           ><i class="material-icons">home</i></a
         >
-        <button
+        <a
           type="button"
+          href="#round-two"
           class="btn-floating btn-large waves-effect waves-light btn submit next-one"
         >
           <i class="material-icons">fast_forward</i>
-        </button>
+        </a>
       </form>
     </div>
     <!-------------------------------------/ROUND ONE----------->
 
     <!-------------------------------------ROUND TWO------------>
-    <div class="container round-two quiz-round">
+    <div class="container round-two quiz-round" id="round-two">
       <h1 class="header">HOME PUB QUIZ</h1>
       <h3>ROUND 2 - SCIENCE & NATURE</h3>
       <form>
@@ -426,21 +430,22 @@
           class="btn-floating btn-large waves-effect waves-light btn"
           ><i class="material-icons">home</i></a
         >
-        <button
+        <a
           type="button"
+          href="#round-three"
           class="btn-floating btn-large waves-effect waves-light btn submit next-two"
         >
           <i class="material-icons">fast_forward</i>
-        </button>
+        </a>
       </form>
     </div>
     <!-------------------------------------/ROUND TWO----------->
 
     <!-------------------------------------ROUND THREE------------>
-    <div class="container round-three quiz-round">
+    <div class="container round-three quiz-round" id="round-three">
       <h1 class="header">HOME PUB QUIZ</h1>
       <h3>ROUND 3 - MOVIES</h3>
-      <h5>In this round you must guess the movie from the quote...</h5>
+      <h5 class="movie-intro">In this round you must guess the movie from the quote...</h5>
       <form>
         <h5>
           1. "A cencus take once tried to test me. I ate his liver with some fava
@@ -570,7 +575,7 @@
               class="form-check-input"
             />
             <button class="btn btn-answer correct">
-              Who Framed Roger Rabbit?*
+              Who Framed Roger Rabbit?
             </button>
           </li>
           <li>
@@ -632,18 +637,19 @@
           class="btn-floating btn-large waves-effect waves-light btn"
           ><i class="material-icons">home</i></a
         >
-        <button
+        <a
           type="button"
+          href="#round-four"
           class="btn-floating btn-large waves-effect waves-light btn submit next-three"
         >
           <i class="material-icons">fast_forward</i>
-        </button>
+        </a>
       </form>
     </div>
     <!-------------------------------------/ROUND THREE----------->
 
     <!-------------------------------------ROUND FOUR------------>
-    <div class="container round-four quiz-round">
+    <div class="container round-four quiz-round" id="round-four">
       <h1 class="header">HOME PUB QUIZ</h1>
       <h3>ROUND 4 - MUSIC</h3>
       <form>
@@ -826,18 +832,19 @@
           class="btn-floating btn-large waves-effect waves-light btn"
           ><i class="material-icons">home</i></a
         >
-        <button
+        <a
           type="button"
+          href="#round-five"
           class="btn-floating btn-large waves-effect waves-light btn submit next-four"
         >
           <i class="material-icons">fast_forward</i>
-        </button>
+        </a>
       </form>
     </div>
     <!-------------------------------------/ROUND FOUR----------->
 
     <!-------------------------------------ROUND FIVE------------>
-    <div class="container round-five quiz-round">
+    <div class="container round-five quiz-round" id="round-five">
       <h1 class="header">HOME PUB QUIZ</h1>
       <h3>ROUND 5 - SPORT</h3>
       <form>
@@ -1022,18 +1029,19 @@
           class="btn-floating btn-large waves-effect waves-light btn"
           ><i class="material-icons">home</i></a
         >
-        <button
+        <a
           type="button"
+          href="#round-six"
           class="btn-floating btn-large waves-effect waves-light btn submit next-five"
         >
           <i class="material-icons">fast_forward</i>
-        </button>
+        </a>
       </form>
     </div>
     <!-------------------------------------/ROUND FIVE----------->
 
     <!-------------------------------------ROUND SIX------------>
-    <div class="container round-six quiz-round">
+    <div class="container round-six quiz-round" id="round-six">
       <h1 class="header">HOME PUB QUIZ</h1>
       <h3>ROUND 6 - GENERAL KNOWLEDGE</h3>
       <form>
@@ -1240,16 +1248,19 @@
         </div>
         <div class="col s12">
           <h4 class="">
-            Congrats on completing the quiz, find out your score and challenge friends below!
+            Congratulations on completing the quiz, find out your score and challenge friends below!
           </h4>
           <div class="divider"></div>
           <h5 class="header">SCORE</h5>
           <div class="row">
-            <h6 id="score">
+            <h6 id="score" class="score">
               
             </h6>
             <h5 id="conclusion"></h5>
           </div>
+        </div>
+        <div class="col s12">
+          <div class="sharethis-inline-share-buttons"></div>
         </div>
       </div>
     </div>

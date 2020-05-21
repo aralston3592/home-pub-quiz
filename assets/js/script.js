@@ -7,27 +7,24 @@ $(document).ready(function () {
 
 //start with score of 0
 let score = 0;
-//number of questions in each round
-let roundTotal = 5;
 //number of questions total
 let total = 30;
 //points given for each answer
 let point = 1;
-//maximum achievable score
-let maxScore = point * total;
 
 let answer = document.getElementsByClassName("btn-answer")
 let correct = document.getElementsByClassName("correct")
-// Add 1 to score and colour correct answers green.
+//add 1 to score and colour correct answer green
 $(".correct").click(function() {
     this.style.backgroundColor = "green";
     score++;
 });
 
-//turn answer red if incorrect 
+//deduct one from score and colour answer red
 $(".incorrect").click(function() {
     this.style.backgroundColor = "red";
-})
+    score--;
+});
 
 //hide landing page content and show round one when start button is clicked
 $(".btn-quiz").click(function () {
@@ -69,7 +66,7 @@ $(".next-five").click(function () {
 $(".score").click(function () {
     $(".round-six").hide();
     $(".score-page-content").show();
-    //show score on score section
+    //show score in score section
     document.getElementById("score").innerHTML = score + "/" + total;
 });
 
@@ -81,5 +78,6 @@ $(".btn-answer").click(function(event) {
 
 //fades other options when answer is chosen
 $("li").click( function(event) {
-    $(this).siblings().fadeTo(500, 0.1).disabled = true;
+    $(this).siblings().fadeTo(500, 0.01);
 });
+

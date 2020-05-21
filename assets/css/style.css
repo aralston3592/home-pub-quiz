@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&&family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,500;0,700;1,200;1,500;1,700&&family=Monoton&display=swap');
 
 body {
     padding: 0;
@@ -9,7 +10,7 @@ body {
     justify-content: center;
     align-content: center;
     text-align: center;
-    font-family: "Anton", sans-serif;
+    font-family: "Exo 2", sans-serif;
     background-color: #244656;
     color: #ffffff;
 }
@@ -26,6 +27,10 @@ body {
 .divider {
     height: 3px;
     background-color: #f9ee6c;
+}
+
+h4 {
+    margin: .912rem 0 .912rem 0;
 }
 
 /*--------------------------------------------------------------Buttons---*/
@@ -51,7 +56,7 @@ body {
 }
 
 ul {
-    min-height: 150px;
+    min-height: 130px;
 }
 
 .btn-answer {
@@ -62,8 +67,37 @@ ul {
     min-width: 150px;
 }
 
+.movie-intro {
+    font-weight: 200;
+}
+
+.progress {
+    height: 20px;
+    color: black;
+    background-color: #ff000a9c;
+    border-radius: 1.2rem;
+}
+
+.progress
+.determinate {
+    background-color: #26a62ab3;
+}
+
+.btn-floating {
+    background-color: #f9ee6c;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.btn-floating
+i {
+    color: #244656;  
+}
+
 /*------------------------------------------------------SCORE PAGE--------*/
 
 #score {
     font-size: 150px;
+    border: 5px solid #f9ee6c;
+    border-radius: 1.2rem;
 }
