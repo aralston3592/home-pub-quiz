@@ -97,7 +97,12 @@ i {
 /*------------------------------------------------------SCORE PAGE--------*/
 
 #score {
-    font-size: 150px;
-    border: 5px solid #f9ee6c;
-    border-radius: 1.2rem;
+    font-size: 25vw;
+    max-width: 800px;
+}
+
+.score-home {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }

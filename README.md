@@ -1,39 +1,88 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Home Pub Quiz
 
-Welcome Andrew Ralston,
+With Home Pub Quiz you can challenge yourself and friends over 6 category rounds of 5 questions each. The categories include: Food & Drink, Science & Nature, Movies, Music, Sport and General Knowledge. Each correct answer is worth 1 point but be careful as any incorrect answer will result in a deduction of 1 point. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## Purpose
 
-## Gitpod Reminders
+Home Pub Quiz is built as part of my Interactive Front End Milestone Project as part of Code Institute's Full Stack Web Developer course. With everyone seemingly locked down in some form or another I thought most people could use a simple escape, enter Home Pub Quiz. A quiz with 6 question categories gives the whole famliy a chance to show their hidden knowledge and challenge friends to beat them by sharing their score across social platforms.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Wireframe Mockups
 
-`python3 -m http.server`
+Before starting the project I put together a few wireframe mockups so I had an idea of what I was trying to create and what I should include. It also allowed me to see how the features would be scaled and incorporated over various device sizes. These were created using [Balsamiq](https://balsamiq.com/ "Balsamiq"):
 
-A blue button should appear to click: *Make Public*,
+[Wireframe Mockups](/assets/wireframes/home-pub-quiz.bmpr "Home Pub Quiz")
 
-Another blue button should appear to click: *Open Browser*.
+These wireframe mockups show how I intended the site design and layout to look on various devices, the streamline design does not vary too much between device sizes to bring a familiarity to revisiting users. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+## Theme
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+The deep navy background used throughout the page gives a clear contrast with the white and subtle yellow used for the quiz information, questions and answers. This contrast makes the quiz information and questions easy for the user to read and understand. Answers change colour to green(correct) and red(incorrect) when selected to indicate how well a user has don with each question. 
 
-## Updates Since The Instructional Video
+## UX
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+[Materialize CSS](https://materializecss.com/ "Materialize") allowed for a mobile-first design that is also easy to navigate and gives users the same experience no matter their preferred device. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Features & Layout
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Home-Landing Page
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Welcomes the user to Home Pub Quiz and sets out the rules for the quiz to follow. A large "Start Quiz" button invites the user to begin and takes them to Round 1.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Quiz Rounds
 
---------
+Each of the six quiz rounds have a round specific category and are made up of five trivia questions. The categories for each round are: 
 
-Happy coding!
+* Food & Drink
+* Science & Nature
+* Movies
+* Music
+* Sport
+* General Knowledge
+
+In each round the user may choose one of a possible three answers for each question and their score will be calculated depending on their input. A correct answer will add one point to the user's score, however an incorrect answer will result in a one point deduction, meaning it may be a better idea to leave an question unanswered if the user is not certain of the answer. 
+
+The Home button at the bottom of each quiz round allows the user to restart the quiz by taking them back to the langing page. The next button allows the user to access the next round of the quiz. The complete button at the foot of round 6 totals the user's score and takes them to the score page.
+
+### Score Page
+
+The score page is where the user is taken upon completion of the quiz and aloows the user to see their total score. It also allows them to challenge their friends and family to take the quiz by sharing on social media. The social media share buttons have been added using [Share This](https://platform.sharethis.com/ "Share This Platform").
+
+## Future Improvements
+
+### Split Rounds Into Individual Quizzes
+Add more questions to each round and make them individual quizzes that can be accessed by a category button on the landing page.
+### High Scores Page
+Allow users to input details and keep a leaderboard of all participants to build mor competition between users and drive up usage.
+### Add More Categories 
+Bring in more categories to fit in with above suggestion to create an individual quiz from each category. This could involve bringing in more specific categories and sub-categories that would make the quiz more accessible for all ages including but not limited to: Children's Trivia; Decade Specific Music and Movies; TV Shows; History; Geography; Specific Sports(e.g. Football, Rugby, Badminton etc.).
+
+## Testing
+
+All basic style and layout testing for each device size during development was done using Chrome's developer tools while previewing the site.
+
+To validate my HTML I used [W3C HTML Validator](https://validator.w3.org/ "W3C HTML Validator")
+
+To validate my CSS I used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator")
+
+## Deployment
+
+Site was deployed using [GitHub](https://github.com/ "GitHub"):
+
+1. Open [GitHub Repository](https://github.com/aralston3592/pub-quiz "Home Pub Quiz").
+2. Click on SETTINGS then scroll down to GitHub PAGES.
+3. Select master branch as the SOURCE.
+4. 'Your site is published at https://aralston3592.github.io/pub-quiz/' will appear on screen.
+5. Site deployed, click link to access.
+
+## Technology Used
+
+* Wireframes: [Balsamiq](https://balsamiq.com/ "Balsamiq")
+* Programming Languages: HTML, CSS, Javascript
+* Fonts & Icons: [Google Fonts](https://fonts.google.com/ "Google Fonts"), [Materialize CSS](https://materializecss.com/ "Materialize")
+* Javascript: [JQuery](https://jquery.com/ "JQuery")
+* Responsive Design: [Materialize CSS](https://materializecss.com/ "Materialize")
+* IDE: [Gitpod](https://gitpod.io/ "GitPod")
+* Version Control: [Git](https://git-scm.com/ "Git")
+* Repository Host/Deployment: [GitHub](https://github.com/ "GitHub")
