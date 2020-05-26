@@ -83,9 +83,9 @@ To validate my HTML I used [W3C HTML Validator](https://validator.w3.org/ "W3C H
 
 To validate my CSS I used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator").
 
-I passed my JS through [JSHint](https://jshint.com/ "JSHint") linter without an issues.
+I passed my JS through [JSHint](https://jshint.com/ "JSHint") linter without any issues.
 
-Before making the site live I sent it out to 25 users as part of a small beta test. From their feedback only small tweaks were required, these have been implimented. 
+Used family and friends to perform small beta test before deployment. 
 
 ## Deployment
 
