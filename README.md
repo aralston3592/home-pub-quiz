@@ -36,9 +36,9 @@ The [Materialize CSS](https://materializecss.com/ "Materialize") standard 12 col
 allowed for an easily structured mobile-first design. It also made sure that Home Pub Quiz is responsive over 
 varying screen sizes and devices. Images below show how the design and layout scales to suit each device size:
 
-* Mobile Designs: [Mobile Home Page](/assets/img/HPQ-mobile-home "Mobile Home Page"), [Mobile Quiz Page](/assets/img/HPQ-mobile-quiz "Mobile Quiz Page"), [Mobile Score Page](/assets/img/HPQ-mobile-score "Mobile Score Page") 
-* Tablet Designs: [Tablet Home Page](/assets/img/HPQ-tablet-home "Tablet Home Page"), [Tablet Quiz Page](/assets/img/HPQ-tablet-quiz "Tablet Quiz Page"), [Tablet Score Page](/assets/img/HPQ-tablet-score "Tablet Score Page")
-* Desktop Designs: [Desktop Home Page](/assets/img/HPQ-desktop-home "Desktop Home Page"), [Desktop Quiz Page](/assets/img/HPQ-desktop-quiz "Desktop Quiz Page"), [Desktop Score Page](/assets/img/HPQ-desktop-score "Desktop Score Page")
+* Mobile Designs: [Mobile Home Page](/assets/img/HPQ-mobile-home.png "Mobile Home Page"), [Mobile Quiz Page](/assets/img/HPQ-mobile-quiz.png "Mobile Quiz Page"), [Mobile Score Page](/assets/img/HPQ-mobile-score.png "Mobile Score Page") 
+* Tablet Designs: [Tablet Home Page](/assets/img/HPQ-tablet-home.png "Tablet Home Page"), [Tablet Quiz Page](/assets/img/HPQ-tablet-quiz.png "Tablet Quiz Page"), [Tablet Score Page](/assets/img/HPQ-tablet-score.png "Tablet Score Page")
+* Desktop Designs: [Desktop Home Page](/assets/img/HPQ-desktop-home.png "Desktop Home Page"), [Desktop Quiz Page](/assets/img/HPQ-desktop-quiz.png "Desktop Quiz Page"), [Desktop Score Page](/assets/img/HPQ-desktop-score.png "Desktop Score Page")
 
 
 ## Features & Layout
