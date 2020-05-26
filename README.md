@@ -1,28 +1,45 @@
 # Home Pub Quiz
 
-With Home Pub Quiz you can challenge yourself and friends over 6 category rounds of 5 questions each. The categories include: Food & Drink, Science & Nature, Movies, Music, Sport and General Knowledge. Each correct answer is worth 1 point but be careful as any incorrect answer will result in a deduction of 1 point. 
+With Home Pub Quiz you can challenge yourself and friends over 6 category rounds of 5 questions each. 
+The categories include: Food & Drink, Science & Nature, Movies, Music, Sport and General Knowledge. 
+Each correct answer is worth 1 point but be careful as any INCORRECT answer will result in a DEDUCTION of 1 point.
+All you have to do is answer as many questions as you can, check out your score and challenge your friends and family to beat you!
 
 ## Purpose
 
-Home Pub Quiz is built as part of my Interactive Front End Milestone Project as part of Code Institute's Full Stack Web Developer course. With everyone seemingly locked down in some form or another I thought most people could use a simple escape, enter Home Pub Quiz. A quiz with 6 question categories gives the whole famliy a chance to show their hidden knowledge and challenge friends to beat them by sharing their score across social platforms.
+Home Pub Quiz is built as part of my Interactive Front End Milestone Project as part of Code Institute's Full Stack Web Developer 
+course. With everyone seemingly locked down in some form or another I thought most people could use a simple escape,
+enter Home Pub Quiz. A quiz with 6 question categories gives the whole famliy a chance to show their hidden knowledge and challenge
+friends to beat them by sharing their score across social platforms.
 
 ## Wireframe Mockups
 
-Before starting the project I put together a few wireframe mockups so I had an idea of what I was trying to create and what I should include. It also allowed me to see how the features would be scaled and incorporated over various device sizes. These were created using [Balsamiq](https://balsamiq.com/ "Balsamiq"):
+Before starting the project I put together a few wireframe mockups so I had an idea of what I was trying to 
+create and what I should include. It also allowed me to see how the features would be scaled and incorporated 
+over various device sizes. These were created using [Balsamiq](https://balsamiq.com/ "Balsamiq"):
 
 [Wireframe Mockups](/assets/wireframes/home-pub-quiz.bmpr "Home Pub Quiz")
 
-These wireframe mockups show how I intended the site design and layout to look on various devices, the streamline design does not vary too much between device sizes to bring a familiarity to revisiting users. 
-
-
+These wireframe mockups show how I intended the site design and layout to look on various devices, the streamline 
+design does not vary too much between device sizes to bring a familiarity to revisiting users. 
 
 ## Theme
 
-The deep navy background used throughout the page gives a clear contrast with the white and subtle yellow used for the quiz information, questions and answers. This contrast makes the quiz information and questions easy for the user to read and understand. Answers change colour to green(correct) and red(incorrect) when selected to indicate how well a user has don with each question. 
+The deep navy background used throughout the page gives a clear contrast with the white and subtle yellow used 
+for the quiz information, questions and answers. This contrast makes the quiz information and questions easy 
+for the user to read and understand. Answers change colour to green(correct) and red(incorrect) when selected 
+to indicate how well a user has done with each question. 
 
 ## UX
 
-[Materialize CSS](https://materializecss.com/ "Materialize") allowed for a mobile-first design that is also easy to navigate and gives users the same experience no matter their preferred device. 
+The [Materialize CSS](https://materializecss.com/ "Materialize") standard 12 column fluid responsive grid system 
+allowed for an easily structured mobile-first design. It also made sure that Home Pub Quiz is responsive over 
+varying screen sizes and devices. Images below show how the design and layout scales to suit each device size:
+
+* Mobile Designs: [Mobile Home Page](/assets/img/HPQ-mobile-home "Mobile Home Page"), [Mobile Quiz Page](/assets/img/HPQ-mobile-quiz "Mobile Quiz Page"), [Mobile Score Page](/assets/img/HPQ-mobile-score "Mobile Score Page") 
+* Tablet Designs: [Tablet Home Page](/assets/img/HPQ-tablet-home "Tablet Home Page"), [Tablet Quiz Page](/assets/img/HPQ-tablet-quiz "Tablet Quiz Page"), [Tablet Score Page](/assets/img/HPQ-tablet-score "Tablet Score Page")
+* Desktop Designs: [Desktop Home Page](/assets/img/HPQ-desktop-home "Desktop Home Page"), [Desktop Quiz Page](/assets/img/HPQ-desktop-quiz "Desktop Quiz Page"), [Desktop Score Page](/assets/img/HPQ-desktop-score "Desktop Score Page")
+
 
 ## Features & Layout
 
@@ -62,9 +79,13 @@ Bring in more categories to fit in with above suggestion to create an individual
 
 All basic style and layout testing for each device size during development was done using Chrome's developer tools while previewing the site.
 
-To validate my HTML I used [W3C HTML Validator](https://validator.w3.org/ "W3C HTML Validator")
+To validate my HTML I used [W3C HTML Validator](https://validator.w3.org/ "W3C HTML Validator").
 
-To validate my CSS I used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator")
+To validate my CSS I used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator").
+
+I passed my JS through [JSHint](https://jshint.com/ "JSHint") linter without an issues.
+
+Before making the site live I sent it out to 25 users as part of a small beta test. From their feedback only small tweaks were required, these have been implimented. 
 
 ## Deployment
 
@@ -80,7 +101,7 @@ Site was deployed using [GitHub](https://github.com/ "GitHub"):
 
 * Wireframes: [Balsamiq](https://balsamiq.com/ "Balsamiq")
 * Programming Languages: HTML, CSS, Javascript
-* Fonts & Icons: [Google Fonts](https://fonts.google.com/ "Google Fonts"), [Materialize CSS](https://materializecss.com/ "Materialize")
+* Fonts & Icons: [Google Fonts](https://fonts.google.com/ "Google Fonts"), [Materialize CSS](https://materializecss.com/ "Materialize"), [Share This](https://platform.sharethis.com/ "Share This Platform"). 
 * Javascript: [JQuery](https://jquery.com/ "JQuery")
 * Responsive Design: [Materialize CSS](https://materializecss.com/ "Materialize")
 * IDE: [Gitpod](https://gitpod.io/ "GitPod")
