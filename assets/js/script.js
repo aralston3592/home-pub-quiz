@@ -10,18 +10,16 @@ let score = 0;
 //number of questions total
 let total = 30;
 
-//add 1 to score and colour correct answer green
-$(".correct").click(function() {
-    this.style.backgroundColor = "green";
+//adds or deducts one point and changes colour depending on answer given
+$(".btn-answer").click( function () {
+    if (this.classList.contains("correct") === true) {
+        this.style.backgroundColor = "green";
+        score++;
+    }   else  {
+            this.style.backgroundColor = "red";
+            score--;
+        }
     $(this).siblings().fadeTo(500, 0);
-    score++;
-});
-
-//deduct one from score and colour answer red
-$(".incorrect").click(function() {
-    this.style.backgroundColor = "red";
-    $(this).siblings().fadeTo(500, 0);
-    score--;
 });
 
 //hide landing page content and show round one when start button is clicked
