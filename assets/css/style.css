@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,500;0,700;1,200;1,500;1,700&&family=Monoton&display=swap');
 
 body {
@@ -12,7 +11,7 @@ body {
     text-align: center;
     font-family: "Exo 2", sans-serif;
     background-color: #244656;
-    color: #ffffff;
+    color: #dceeff;
 }
 
 .header {
@@ -41,7 +40,7 @@ h4 {
     background-color: #f9ee6c;
     color: #62acd0;
     font-size: 30px;
-    border-radius: 1.2rem;
+    border-radius: 4rem;
     position: relative;
 }
 
@@ -55,7 +54,16 @@ h4 {
     padding-bottom: 30px;
 }
 
-ul {
+h3 {
+    text-decoration: underline;
+}
+
+h5 {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.answers {
     min-height: 130px;
 }
 
@@ -64,7 +72,7 @@ ul {
     color: #244656;
     border-radius: 1.2rem;
     margin-bottom: 10px;
-    min-width: 150px;
+    display: block;
 }
 
 .movie-intro {
@@ -73,20 +81,19 @@ ul {
 
 .progress {
     height: 20px;
-    color: black;
-    background-color: #ff000a9c;
+    background-color: #ff000ae0;
     border-radius: 1.2rem;
+    margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 .progress
 .determinate {
-    background-color: #26a62ab3;
+    background-color: #00bd06d6;
 }
 
 .btn-floating {
-    background-color: #f9ee6c;
-    padding-left: 10%;
-    padding-right: 10%;
+    background-color: #f9ee6c;    
 }
 
 .btn-floating
@@ -94,15 +101,23 @@ i {
     color: #244656;  
 }
 
+a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 /*------------------------------------------------------SCORE PAGE--------*/
 
 #score {
-    font-size: 25vw;
-    max-width: 800px;
+    font-size: 20vw;
 }
 
 .score-home {
     margin-top: 20px;
     margin-bottom: 20px;
 
+}
+
+.score-divider {
+    margin-bottom: 30px;
 }

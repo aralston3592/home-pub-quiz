@@ -9,20 +9,18 @@ $(document).ready(function () {
 let score = 0;
 //number of questions total
 let total = 30;
-//points given for each answer
-let point = 1;
 
-let answer = document.getElementsByClassName("btn-answer")
-let correct = document.getElementsByClassName("correct")
 //add 1 to score and colour correct answer green
 $(".correct").click(function() {
     this.style.backgroundColor = "green";
+    $(this).siblings().fadeTo(500, 0);
     score++;
 });
 
 //deduct one from score and colour answer red
 $(".incorrect").click(function() {
     this.style.backgroundColor = "red";
+    $(this).siblings().fadeTo(500, 0);
     score--;
 });
 
@@ -75,9 +73,3 @@ $(".score").click(function () {
 $(".btn-answer").click(function(event) {
     event.preventDefault();
 });
-
-//fades other options when answer is chosen
-$("li").click( function(event) {
-    $(this).siblings().fadeTo(500, 0.01);
-});
-
